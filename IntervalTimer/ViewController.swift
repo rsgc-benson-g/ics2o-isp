@@ -42,6 +42,10 @@ class ViewController: UIViewController {
         
         timeLeft = timeLeft - 1
         timerValue.text = "\(timeLeft)"
+        
+        if (timeLeft < 0){
+            timerValue.text = "0"
+        }
     }
     
 }
