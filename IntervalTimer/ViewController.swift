@@ -33,8 +33,12 @@ class ViewController: UIViewController {
     
     @IBAction func startTimer(_ sender: AnyObject) {
         
+        // updating time left
+        timeLeft = 61
+        
         //initilieze timer used to count down
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
+        
     }
     
     //decreases timer value
