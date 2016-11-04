@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timerValue: UILabel!
 
+    @IBOutlet weak var startButton: UIButton!
     
     var timer = Timer()
     //initial value
     var timeLeft = 60
+    var timerOn = true
     
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +37,44 @@ class ViewController: UIViewController {
     
     @IBAction func startTimer(_ sender: AnyObject) {
         
-        // updating time left
-        timeLeft = 61
+       
         
         //initilieze timer used to count down
+        timer.invalidate()
+        
+        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
+        
+        // setting label
+        startButton.setTitle("Pause", for: UIControlState.normal)
+        
+        if timerOn == true {
+            
+            timerOn = false
+            
+        }else{
+            timerOn = true
+        }
+        
+        if (timerOn ==  true){
+            timer.invalidate()
+            startButton.setTitle("Start", for: UIControlState.normal)
+        }else{
+            
+           
+            startButton.setTitle("Pause", for: UIControlState.normal)
+            
+        }
+        
+    }
+    
+    @IBAction func resetTimer(_ sender: AnyObject) {
+        
+        startButton.setTitle("Start", for: UIControlState.normal)
+        timer.invalidate()
+        timeLeft = 61
+        timerValue.text = "60"
+        timerOn = false
         
     }
     
