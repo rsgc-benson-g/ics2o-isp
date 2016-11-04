@@ -19,8 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kH-pX-Ixl">
-                                <frame key="frameInset" minX="44" minY="426" width="77" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kH-pX-Ixl">
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
@@ -32,35 +31,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf7-WD-uIH">
-                                <frame key="frameInset" minX="181" minY="425" width="86" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Reset"/>
-                                <connections>
-                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKF-Cw-rpO"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sVC-di-NwD">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dpp-Dd-BqA">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf7-WD-uIH">
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKF-Cw-rpO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7kH-pX-Ixl" secondAttribute="bottom" constant="11" id="0tW-Tj-viz"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2TV-E9-lyC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ixd-u3-ZUi" secondAttribute="trailing" constant="107" id="34o-8T-LS2"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-191" id="3dq-SJ-3Y9"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="top" secondItem="Ixd-u3-ZUi" secondAttribute="bottom" constant="348" id="4LD-Fw-Vfh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mf7-WD-uIH" secondAttribute="bottom" constant="10" id="4tY-zO-gHO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7kH-pX-Ixl" secondAttribute="trailing" constant="179" id="G3Y-ds-em6"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="GDx-db-Gfr"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="207.5" id="J1c-f2-v7l"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="top" secondItem="Ixd-u3-ZUi" secondAttribute="bottom" constant="348" id="JTV-R4-p7K"/>
-                            <constraint firstItem="Mf7-WD-uIH" firstAttribute="leading" secondItem="7kH-pX-Ixl" secondAttribute="trailing" constant="60" id="Nbd-cA-IeL"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-77.5" id="Pyf-8t-Nfw"/>
-                            <constraint firstItem="Mf7-WD-uIH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="64" id="Q9n-vz-7IJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mf7-WD-uIH" secondAttribute="trailing" constant="37" id="kOm-Qo-Fa9"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="108" id="n03-ih-rax"/>
-                            <constraint firstItem="Mf7-WD-uIH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="207.5" id="n8m-Qx-J88"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nmK-ru-cKQ"/>
-                            <constraint firstItem="Mf7-WD-uIH" firstAttribute="top" secondItem="Ixd-u3-ZUi" secondAttribute="bottom" constant="347" id="qPi-8o-hey"/>
+                            <constraint firstItem="sVC-di-NwD" firstAttribute="centerY" secondItem="7kH-pX-Ixl" secondAttribute="centerY" id="4J2-VZ-hwz"/>
+                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="108" id="J5W-Sq-J9N"/>
+                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-77.5" id="Lbb-a0-umd"/>
+                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TTz-jq-Ma0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7kH-pX-Ixl" secondAttribute="bottom" constant="11" id="YDt-Yd-Y3c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ixd-u3-ZUi" secondAttribute="trailing" constant="107" id="ZCk-dH-ifx"/>
+                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-191" id="bs5-1D-Cq0"/>
+                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="406" id="f3z-kK-crZ"/>
+                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jYY-4z-1BM"/>
+                            <constraint firstItem="sVC-di-NwD" firstAttribute="leading" secondItem="7kH-pX-Ixl" secondAttribute="trailing" constant="69" id="jaG-5f-OCl"/>
+                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="207.5" id="ofu-j6-eI4"/>
+                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="sh8-1N-TEX"/>
                         </constraints>
                     </view>
                     <connections>
