@@ -16,51 +16,73 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kH-pX-Ixl">
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Start"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVX-ub-Xou">
+                                <frame key="frameInset" minX="16" minY="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTg-Z0-vvl"/>
+                                    <segue destination="UHV-wp-rKY" kind="show" id="G3L-X3-VLO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-u3-ZUi">
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sVC-di-NwD">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="boR-zY-ZoT">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dpp-Dd-BqA">
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf7-WD-uIH">
-                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                                <state key="normal" title="Reset"/>
-                                                <connections>
-                                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKF-Cw-rpO"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kH-pX-Ixl">
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTg-Z0-vvl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf7-WD-uIH">
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKF-Cw-rpO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-em-U9H">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Current Interval: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re7-AI-aZR" userLabel="Current Interval:">
+                                        <frame key="frameInset" width="320" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-u3-ZUi">
+                                        <frame key="frameInset" minY="70" width="320" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-aZ-Yvc">
+                                        <frame key="frameInset" minY="152" width="320" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Next Interval: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tH4-gE-fiO">
+                                        <frame key="frameInset" minY="203" width="320" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u37-Je-np6">
+                                        <frame key="frameInset" minY="272" height="216"/>
+                                    </pickerView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sVC-di-NwD" firstAttribute="centerY" secondItem="7kH-pX-Ixl" secondAttribute="centerY" id="4J2-VZ-hwz"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="108" id="J5W-Sq-J9N"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-77.5" id="Lbb-a0-umd"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TTz-jq-Ma0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7kH-pX-Ixl" secondAttribute="bottom" constant="11" id="YDt-Yd-Y3c"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ixd-u3-ZUi" secondAttribute="trailing" constant="107" id="ZCk-dH-ifx"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-191" id="bs5-1D-Cq0"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="406" id="f3z-kK-crZ"/>
-                            <constraint firstItem="Ixd-u3-ZUi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jYY-4z-1BM"/>
-                            <constraint firstItem="sVC-di-NwD" firstAttribute="leading" secondItem="7kH-pX-Ixl" secondAttribute="trailing" constant="69" id="jaG-5f-OCl"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="207.5" id="ofu-j6-eI4"/>
-                            <constraint firstItem="7kH-pX-Ixl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="sh8-1N-TEX"/>
+                            <constraint firstItem="boR-zY-ZoT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="5bW-ka-mpl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="boR-zY-ZoT" secondAttribute="bottom" constant="20" id="A8K-9T-Ox8"/>
+                            <constraint firstItem="bfl-em-U9H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="H0e-Ki-Acq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="boR-zY-ZoT" secondAttribute="trailing" constant="20" id="Nsj-z6-4kN"/>
+                            <constraint firstItem="bfl-em-U9H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QHa-2P-od7"/>
+                            <constraint firstItem="bfl-em-U9H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYP-Ob-0oT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -70,7 +92,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="136.25"/>
+            <point key="canvasLocation" x="-146" y="184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E2I-Pz-yrW">
+            <objects>
+                <viewController id="UHV-wp-rKY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N1L-Lr-4ao"/>
+                        <viewControllerLayoutGuide type="bottom" id="nQ4-cb-hd2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="065-nl-Oek">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-2V-6hV">
+                                <frame key="frameInset" minX="16" minY="530" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fnH-yE-sbs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syh-hW-Ikl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="184"/>
         </scene>
     </scenes>
 </document>
