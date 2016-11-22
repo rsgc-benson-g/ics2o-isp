@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F69ABBC1DE3BE71002627B9 /* Todo in Resources */ = {isa = PBXBuildFile; fileRef = 3F69ABBB1DE3BE71002627B9 /* Todo */; };
 		3FA4A9A71DC7891D00516584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4A9A61DC7891D00516584 /* AppDelegate.swift */; };
 		3FA4A9A91DC7891D00516584 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4A9A81DC7891D00516584 /* ViewController.swift */; };
 		3FA4A9AC1DC7891D00516584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4A9AA1DC7891D00516584 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F69ABBB1DE3BE71002627B9 /* Todo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todo; sourceTree = "<group>"; };
 		3FA4A9A31DC7891D00516584 /* IntervalTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntervalTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA4A9A61DC7891D00516584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FA4A9A81DC7891D00516584 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				3FA4A9A61DC7891D00516584 /* AppDelegate.swift */,
 				3FA4A9A81DC7891D00516584 /* ViewController.swift */,
 				3FA4A9AA1DC7891D00516584 /* Main.storyboard */,
+				3F69ABBB1DE3BE71002627B9 /* Todo */,
 				3FA4A9AD1DC7891D00516584 /* Assets.xcassets */,
 				3FA4A9AF1DC7891D00516584 /* LaunchScreen.storyboard */,
 				3FA4A9B21DC7891D00516584 /* Info.plist */,
@@ -181,6 +184,7 @@
 			files = (
 				3FA4A9B11DC7891D00516584 /* LaunchScreen.storyboard in Resources */,
 				3FA4A9AE1DC7891D00516584 /* Assets.xcassets in Resources */,
+				3F69ABBC1DE3BE71002627B9 /* Todo in Resources */,
 				3FA4A9AC1DC7891D00516584 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
