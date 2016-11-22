@@ -204,64 +204,64 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JhF-Aj-Ewb">
-                                <rect key="frame" x="255" y="180" width="90" height="402"/>
+                                <rect key="frame" x="255.5" y="180" width="89.5" height="402"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ULM-MZ-XqV">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nsW-VK-7ej">
-                                        <rect key="frame" x="0.0" y="41" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="41" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-Kb-BWs">
-                                        <rect key="frame" x="0.0" y="82" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="82" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="olG-Lo-NLA">
-                                        <rect key="frame" x="0.0" y="123" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="123" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jIA-xg-Wsc">
-                                        <rect key="frame" x="0.0" y="164" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="164" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ruo-3A-bh4">
-                                        <rect key="frame" x="0.0" y="205" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="205" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EnA-sc-RP3">
-                                        <rect key="frame" x="0.0" y="246" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="246" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xIo-f5-Fr7">
-                                        <rect key="frame" x="0.0" y="287" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="287" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ORa-kY-TeE">
-                                        <rect key="frame" x="0.0" y="328" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="328" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7Nd-59-7X2">
-                                        <rect key="frame" x="0.0" y="369" width="90" height="33"/>
+                                        <rect key="frame" x="0.0" y="369" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
@@ -269,64 +269,64 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="39H-5H-3YW">
-                                <rect key="frame" x="131" y="180" width="87" height="402"/>
+                                <rect key="frame" x="116" y="180" width="118" height="402"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fah-qb-wR8">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BmK-4Y-hxt">
-                                        <rect key="frame" x="0.0" y="41" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="41" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KIH-fH-vB1">
-                                        <rect key="frame" x="0.0" y="82" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="82" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="njB-XY-WLn">
-                                        <rect key="frame" x="0.0" y="123" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="123" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0uq-WS-INx">
-                                        <rect key="frame" x="0.0" y="164" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="164" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xB1-CV-VUL">
-                                        <rect key="frame" x="0.0" y="205" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="205" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WRR-Yb-YXa">
-                                        <rect key="frame" x="0.0" y="246" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="246" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YZR-Tu-FFF">
-                                        <rect key="frame" x="0.0" y="287" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="287" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="scL-Ea-azy">
-                                        <rect key="frame" x="0.0" y="328" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="328" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qFd-nn-7TG">
-                                        <rect key="frame" x="0.0" y="369" width="87" height="33"/>
+                                        <rect key="frame" x="0.0" y="369" width="118" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -359,12 +359,11 @@
                             <constraint firstItem="JhF-Aj-Ewb" firstAttribute="top" secondItem="Akl-a0-Ej8" secondAttribute="bottom" constant="20" id="6G5-PO-5UP"/>
                             <constraint firstItem="nQ4-cb-hd2" firstAttribute="top" secondItem="PlE-Xz-0Xg" secondAttribute="bottom" constant="20" id="DYg-G2-gnE"/>
                             <constraint firstItem="KHZ-Ty-V6Z" firstAttribute="leading" secondItem="065-nl-Oek" secondAttribute="leadingMargin" id="EuZ-CZ-cQ3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="39H-5H-3YW" secondAttribute="trailing" constant="141" id="MVD-QN-DSG"/>
                             <constraint firstItem="PlE-Xz-0Xg" firstAttribute="leading" secondItem="065-nl-Oek" secondAttribute="leadingMargin" constant="20" id="NQc-Y8-8i5"/>
                             <constraint firstItem="Akl-a0-Ej8" firstAttribute="leading" secondItem="065-nl-Oek" secondAttribute="leadingMargin" constant="68" id="PNc-CD-Pu0"/>
-                            <constraint firstItem="JhF-Aj-Ewb" firstAttribute="leading" secondItem="39H-5H-3YW" secondAttribute="trailing" constant="37" id="T2w-Hp-7TH"/>
                             <constraint firstAttribute="bottomMargin" secondItem="JhF-Aj-Ewb" secondAttribute="bottom" constant="85" id="Tqa-81-eDr"/>
                             <constraint firstItem="39H-5H-3YW" firstAttribute="top" secondItem="Akl-a0-Ej8" secondAttribute="bottom" constant="20" id="TvJ-Nn-KLz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="39H-5H-3YW" secondAttribute="trailing" constant="125" id="YBI-Ox-g7H"/>
                             <constraint firstItem="XBD-fQ-aqA" firstAttribute="leading" secondItem="065-nl-Oek" secondAttribute="leadingMargin" constant="13" id="Zb8-U2-XV7"/>
                             <constraint firstItem="Cft-3V-CDe" firstAttribute="top" secondItem="XBD-fQ-aqA" secondAttribute="bottom" constant="8.5" id="aLR-Zi-mOO"/>
                             <constraint firstItem="Akl-a0-Ej8" firstAttribute="top" secondItem="065-nl-Oek" secondAttribute="topMargin" constant="140" id="cf5-yi-3sS"/>
@@ -374,7 +373,7 @@
                             <constraint firstItem="Cft-3V-CDe" firstAttribute="leading" secondItem="065-nl-Oek" secondAttribute="leadingMargin" constant="46" id="eef-lK-oxj"/>
                             <constraint firstItem="XBD-fQ-aqA" firstAttribute="top" secondItem="065-nl-Oek" secondAttribute="topMargin" constant="18" id="nyd-th-pgN"/>
                             <constraint firstAttribute="bottom" secondItem="KHZ-Ty-V6Z" secondAttribute="bottom" constant="85" id="pgF-2T-zSO"/>
-                            <constraint firstItem="39H-5H-3YW" firstAttribute="leading" secondItem="065-nl-Oek" secondAttribute="leadingMargin" constant="115" id="seD-j0-E7a"/>
+                            <constraint firstItem="39H-5H-3YW" firstAttribute="leading" secondItem="065-nl-Oek" secondAttribute="leadingMargin" constant="100" id="seD-j0-E7a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cft-3V-CDe" secondAttribute="trailing" constant="46" id="vcd-ff-Qjf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XBD-fQ-aqA" secondAttribute="trailing" constant="14" id="vs4-Vb-67D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PlE-Xz-0Xg" secondAttribute="trailing" constant="20" id="zO1-zZ-IeH"/>
