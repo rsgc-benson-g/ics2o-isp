@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntervalTimer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ViewController" customModule="IntervalTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -109,7 +109,7 @@
         <!--View Controller-->
         <scene sceneID="E2I-Pz-yrW">
             <objects>
-                <viewController id="UHV-wp-rKY" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="UHV-wp-rKY" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N1L-Lr-4ao"/>
                         <viewControllerLayoutGuide type="bottom" id="nQ4-cb-hd2"/>
@@ -388,7 +388,7 @@
         <!--View Controller-->
         <scene sceneID="Zae-wq-Wxd">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" id="RwP-nV-mUD" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="RwP-nV-mUD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Se2-va-3Gu"/>
                         <viewControllerLayoutGuide type="bottom" id="CPB-wf-vqK"/>
@@ -439,6 +439,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="npf-rD-6aS"/>
+        <segue reference="w7X-yg-xC7"/>
     </inferredMetricsTieBreakers>
 </document>
