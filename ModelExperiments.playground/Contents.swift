@@ -14,7 +14,7 @@ struct Segment {
     }
 }
 
-
+var segments : [Segment] = []
 
 var firstSegment = Segment(withName: "Hard", ofTime: 60)
 
@@ -23,6 +23,7 @@ firstSegment.name
 
 firstSegment.time
 
+segments.append(firstSegment)
 
 var secondSegment = Segment(withName: "Easy", ofTime: 120)
 
@@ -31,6 +32,11 @@ secondSegment.name
 
 secondSegment.time
 
+segments.append(secondSegment)
+
+segments[1].name = "Medium"
+
+segments
 
 var thirdSegment = Segment(withName: "Medium", ofTime: 40)
 

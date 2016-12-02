@@ -13,6 +13,7 @@
 		3FA4A9AC1DC7891D00516584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4A9AA1DC7891D00516584 /* Main.storyboard */; };
 		3FA4A9AE1DC7891D00516584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4A9AD1DC7891D00516584 /* Assets.xcassets */; };
 		3FA4A9BC1DC7891D00516584 /* IntervalTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4A9BB1DC7891D00516584 /* IntervalTimerTests.swift */; };
+		3FEF967D1DF1CFB200FDD0C4 /* SequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF967C1DF1CFB200FDD0C4 /* SequenceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3FA4A9B71DC7891D00516584 /* IntervalTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA4A9BB1DC7891D00516584 /* IntervalTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalTimerTests.swift; sourceTree = "<group>"; };
 		3FA4A9BD1DC7891D00516584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEF967C1DF1CFB200FDD0C4 /* SequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3FA4A9A61DC7891D00516584 /* AppDelegate.swift */,
+				3FEF967C1DF1CFB200FDD0C4 /* SequenceViewController.swift */,
 				3FA4A9A81DC7891D00516584 /* ViewController.swift */,
 				3FA4A9AA1DC7891D00516584 /* Main.storyboard */,
 				3F69ABBB1DE3BE71002627B9 /* Todo */,
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEF967D1DF1CFB200FDD0C4 /* SequenceViewController.swift in Sources */,
 				3FA4A9A91DC7891D00516584 /* ViewController.swift in Sources */,
 				3FA4A9A71DC7891D00516584 /* AppDelegate.swift in Sources */,
 			);
