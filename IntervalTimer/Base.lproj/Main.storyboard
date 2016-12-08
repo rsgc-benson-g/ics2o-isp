@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-146" y="184"/>
         </scene>
-        <!--View Controller-->
+        <!--Sequence View Controller-->
         <scene sceneID="E2I-Pz-yrW">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="UHV-wp-rKY" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="UHV-wp-rKY" customClass="SequenceViewController" customModule="IntervalTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N1L-Lr-4ao"/>
                         <viewControllerLayoutGuide type="bottom" id="nQ4-cb-hd2"/>
@@ -380,6 +380,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="PlE-Xz-0Xg" secondAttribute="trailing" constant="20" id="zO1-zZ-IeH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameEight" destination="YZR-Tu-FFF" id="aHi-5X-0eG"/>
+                        <outlet property="nameFive" destination="0uq-WS-INx" id="UVm-Vh-hhB"/>
+                        <outlet property="nameFour" destination="njB-XY-WLn" id="PRi-jB-PFL"/>
+                        <outlet property="nameNine" destination="scL-Ea-azy" id="BCZ-Md-zeV"/>
+                        <outlet property="nameOne" destination="Fah-qb-wR8" id="Tlt-si-SKq"/>
+                        <outlet property="nameSeven" destination="WRR-Yb-YXa" id="W4x-TE-5Nv"/>
+                        <outlet property="nameSix" destination="xB1-CV-VUL" id="Bsq-yp-kZ9"/>
+                        <outlet property="nameTen" destination="qFd-nn-7TG" id="g3h-yX-e5k"/>
+                        <outlet property="nameThree" destination="KIH-fH-vB1" id="GUm-LO-Mla"/>
+                        <outlet property="nameTwo" destination="BmK-4Y-hxt" id="MoK-zz-f2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Syh-hW-Ikl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -25,6 +25,7 @@ firstSegment.time
 
 segments.append(firstSegment)
 
+
 var secondSegment = Segment(withName: "Easy", ofTime: 120)
 
 
@@ -34,9 +35,8 @@ secondSegment.time
 
 segments.append(secondSegment)
 
-segments[1].name = "Medium"
 
-segments
+
 
 var thirdSegment = Segment(withName: "Medium", ofTime: 40)
 
@@ -45,6 +45,8 @@ thirdSegment.name
 
 thirdSegment.time
 
+segments.append(thirdSegment)
+
 
 var fourthSegment = Segment(withName: "Hard", ofTime: 70)
 
@@ -52,6 +54,8 @@ var fourthSegment = Segment(withName: "Hard", ofTime: 70)
 fourthSegment.name
 
 fourthSegment.time
+
+segments.append(fourthSegment)
 
 
 
@@ -62,6 +66,8 @@ fifthSegment.name
 
 fifthSegment.time
 
+segments.append(fifthSegment)
+
 
 var sixthSegment = Segment(withName: "Easy", ofTime: 600)
 
@@ -69,6 +75,8 @@ var sixthSegment = Segment(withName: "Easy", ofTime: 600)
 sixthSegment.name
 
 sixthSegment.time
+
+segments.append(sixthSegment)
 
 
 
@@ -79,6 +87,7 @@ seventhSegment.name
 
 seventhSegment.time
 
+segments.append(seventhSegment)
 
 
 var eighthSegment = Segment(withName: "Easy", ofTime: 50)
@@ -88,6 +97,8 @@ eighthSegment.name
 
 eighthSegment.time
 
+segments.append(eighthSegment)
+
 
 var ninethSegment = Segment(withName: "Medium", ofTime: 90)
 
@@ -95,6 +106,8 @@ var ninethSegment = Segment(withName: "Medium", ofTime: 90)
 ninethSegment.name
 
 ninethSegment.time
+
+segments.append(ninethSegment)
 
 
 
@@ -105,8 +118,7 @@ tenthSegment.name
 
 tenthSegment.time
 
+segments.append(tenthSegment)
 
 
-
-var sequence : [Segment] = []
 
