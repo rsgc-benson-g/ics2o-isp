@@ -8,6 +8,17 @@
 
 import UIKit
 
+struct Segment {
+    
+    var name: String
+    var time: Int
+    
+    init(withName : String, ofTime : Int) {
+        name = withName
+        time = ofTime
+    }
+}
+
 class SequenceViewController: UIViewController {
     
     @IBOutlet weak var nameOne: UITextField!
@@ -20,106 +31,85 @@ class SequenceViewController: UIViewController {
     @IBOutlet weak var nameEight: UITextField!
     @IBOutlet weak var nameNine: UITextField!
     @IBOutlet weak var nameTen: UITextField!
-   
+    var segments : [Segment] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for _ in 1...10 {
+            
+            segments.append(Segment(withName: "", ofTime: 0))
+        }
         
         
     }
     
-    
-    struct Segment {
-        
-        var name: String
-        var time: Int
-        
-        init(withName : String, ofTime : Int) {
-            name = withName
-            time = ofTime
+    @IBAction func firstSegmentName(_ sender: Any) {
+        if let name = nameOne.text {
+            segments[0].name = name
         }
     }
     
-    var segments : [Segment] = []
+    @IBAction func secondSegmentName(_ sender: Any) {
+        if let name = nameTwo.text {
+            segments[1].name = name
+        }
+    }
     
-    var firstSegment = Segment(withName: "Hard", ofTime: 60)
-    
-    
-    
-    segments.append(firstSegment)
-    
-    
-    var secondSegment = Segment(withName: "Easy", ofTime: 120)
-    
-    
-    
-    
-    segments.append(secondSegment)
+    @IBAction func thirdSegmentName(_ sender: Any) {
+        if let name = nameThree.text {
+            segments[2].name = name
+        }
+    }
     
     
+    @IBAction func fourthSegmentName(_ sender: Any) {
+        if let name = nameFour.text {
+            segments[3].name = name
+        }
+    }
+    
+    @IBAction func fifthSegmentName(_ sender: Any) {
+        if let name = nameFive.text {
+            segments[4].name = name
+        }
+    }
     
     
-    var thirdSegment = Segment(withName: "Medium", ofTime: 40)
+    @IBAction func sixthSegmentName(_ sender: Any) {
+        if let name = nameSix.text {
+            segments[5].name = name
+        }
+    }
     
     
+    @IBAction func seventhSegmentName(_ sender: Any) {
+        if let name = nameSeven.text {
+            segments[6].name = name
+        }
+    }
     
     
-    segments.append(thirdSegment)
+    @IBAction func eighthSegmentName(_ sender: Any) {
+        if let name = nameEight.text {
+            segments[7].name = name
+        }
+    }
     
     
-    var fourthSegment = Segment(withName: "Hard", ofTime: 70)
+    @IBAction func ninethSegmentName(_ sender: Any) {
+        if let name = nameNine.text {
+            segments[8].name = name
+        }
+    }
     
     
-    
-    segments.append(fourthSegment)
-    
-    
-    
-    var fifthSegment = Segment(withName: "Medium", ofTime: 60)
-    
-    
-    
-    
-    segments.append(fifthSegment)
-    
-    
-    var sixthSegment = Segment(withName: "Easy", ofTime: 600)
-    
-    
-    
-    segments.append(sixthSegment)
-    
-    
-    
-    var seventhSegment = Segment(withName: "Hard", ofTime: 60)
-    
-    
-    
-    
-    segments.append(seventhSegment)
-    
-    
-    var eighthSegment = Segment(withName: "Easy", ofTime: 50)
-    
-    
-    
-    segments.append(eighthSegment)
-    
-    
-    var ninethSegment = Segment(withName: "Medium", ofTime: 90)
-    
-    
-    
-    segments.append(ninethSegment)
-    
-    
-    
-    var tenthSegment = Segment(withName: "Stretch", ofTime: 600)
-    
-    
-    
-    segments.append(tenthSegment)
+    @IBAction func tenthSegmentName(_ sender: Any) {
+        if let name = nameTen.text {
+            segments[9].name = name
+        }
+    }
     
     
     
