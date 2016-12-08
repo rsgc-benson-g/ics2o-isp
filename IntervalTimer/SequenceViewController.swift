@@ -31,6 +31,21 @@ class SequenceViewController: UIViewController {
     @IBOutlet weak var nameEight: UITextField!
     @IBOutlet weak var nameNine: UITextField!
     @IBOutlet weak var nameTen: UITextField!
+    
+    
+    @IBOutlet weak var timeOne: UITextField!
+    @IBOutlet weak var timeTwo: UITextField!
+    @IBOutlet weak var timeThree: UITextField!
+    @IBOutlet weak var timeFour: UITextField!
+    @IBOutlet weak var timeFive: UITextField!
+    @IBOutlet weak var timeSix: UITextField!
+    @IBOutlet weak var timeSeven: UITextField!
+    @IBOutlet weak var timeEight: UITextField!
+    @IBOutlet weak var timeNine: UITextField!
+    @IBOutlet weak var timeTen: UITextField!
+    
+    
+    
     var segments : [Segment] = []
     
     
@@ -108,6 +123,97 @@ class SequenceViewController: UIViewController {
     @IBAction func tenthSegmentName(_ sender: Any) {
         if let name = nameTen.text {
             segments[9].name = name
+        }
+    }
+    
+    
+    
+    @IBAction func firstSegmentTime(_ sender: Any) {
+        if let time = timeOne.text {
+            if let intTime = Int(time) {
+                segments[0].time = intTime
+            }
+        }
+    }
+
+    @IBAction func secondSegmentTime(_ sender: Any) {
+        if let time = timeTwo.text {
+            if let intTime = Int(time) {
+                segments[0].time = intTime
+            }
+        }
+    }
+    
+    
+    @IBAction func thirdSegmentTime(_ sender: Any) {
+        if let time = timeThree.text {
+            if let intTime = Int(time) {
+                segments[2].time = intTime
+            }
+        }
+    }
+    
+    
+    @IBAction func fourthSegmentTime(_ sender: Any) {
+        if let time = timeFour.text {
+            if let intTime = Int(time) {
+                segments[3].time = intTime
+            }
+        }
+    }
+    
+    
+    @IBAction func fifthSegmentTime(_ sender: Any) {
+        if let time = timeFive.text {
+            if let intTime = Int(time) {
+                segments[4].time = intTime
+            }
+        }
+    }
+    
+    
+    @IBAction func sixthSegmentTime(_ sender: Any) {
+        if let time = timeSix.text {
+            if let intTime = Int(time) {
+                segments[5].time = intTime
+            }
+        }
+    }
+    
+    
+    @IBAction func seventhSegmentTime(_ sender: Any) {
+        if let time = timeSeven.text {
+            if let intTime = Int(time) {
+                segments[6].time = intTime
+            }
+        }
+    }
+    
+    
+    @IBAction func eighthSegmentTime(_ sender: Any) {
+        if let time = timeEight.text {
+            if let intTime = Int(time) {
+                segments[7].time = intTime
+            }
+        }
+    }
+    
+    
+    @IBAction func ninethSegmentTime(_ sender: Any) {
+        if let time = timeNine.text {
+            if let intTime = Int(time) {
+                segments[8].time = intTime
+            }
+        }
+    }
+    
+    
+    
+    @IBAction func tenthSegmentTime(_ sender: Any) {
+        if let time = timeTen.text {
+            if let intTime = Int(time) {
+                segments[9].time = intTime
+            }
         }
     }
     

@@ -212,60 +212,91 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="firstSegmentName:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="hVV-bn-9cE"/>
+                                            <action selector="firstSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="jvU-Nq-mpy"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nsW-VK-7ej">
                                         <rect key="frame" x="0.0" y="41" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="secondSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="kfJ-qf-mAt"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-Kb-BWs">
                                         <rect key="frame" x="0.0" y="82" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="thirdSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="c8f-yS-iud"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="olG-Lo-NLA">
                                         <rect key="frame" x="0.0" y="123" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="fourthSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="a2f-J9-ws1"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jIA-xg-Wsc">
                                         <rect key="frame" x="0.0" y="164" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="fifthSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="U1r-f2-TUL"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ruo-3A-bh4">
                                         <rect key="frame" x="0.0" y="205" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="sixthSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="hnd-Af-dzu"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EnA-sc-RP3">
                                         <rect key="frame" x="0.0" y="246" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="seventhSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="SId-kr-eCu"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xIo-f5-Fr7">
                                         <rect key="frame" x="0.0" y="287" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="eighthSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="MGd-v1-Gpb"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ORa-kY-TeE">
                                         <rect key="frame" x="0.0" y="328" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="ninethSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="lUn-WZ-iS9"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Time (sec)" textAlignment="center" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7Nd-59-7X2">
                                         <rect key="frame" x="0.0" y="369" width="89.5" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="tenthSegmentTime:" destination="UHV-wp-rKY" eventType="editingDidEnd" id="TS9-NH-LBO"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -421,6 +452,16 @@
                         <outlet property="nameTen" destination="qFd-nn-7TG" id="g3h-yX-e5k"/>
                         <outlet property="nameThree" destination="KIH-fH-vB1" id="GUm-LO-Mla"/>
                         <outlet property="nameTwo" destination="BmK-4Y-hxt" id="MoK-zz-f2Y"/>
+                        <outlet property="timeEight" destination="xIo-f5-Fr7" id="2FF-1e-xac"/>
+                        <outlet property="timeFive" destination="jIA-xg-Wsc" id="1EJ-Zv-ZZc"/>
+                        <outlet property="timeFour" destination="olG-Lo-NLA" id="I8U-2o-a2N"/>
+                        <outlet property="timeNine" destination="ORa-kY-TeE" id="lgv-QR-hfv"/>
+                        <outlet property="timeOne" destination="ULM-MZ-XqV" id="2Br-vm-TCy"/>
+                        <outlet property="timeSeven" destination="EnA-sc-RP3" id="Qvx-b7-KGu"/>
+                        <outlet property="timeSix" destination="ruo-3A-bh4" id="aVj-lz-p9B"/>
+                        <outlet property="timeTen" destination="7Nd-59-7X2" id="EK9-wd-Ytn"/>
+                        <outlet property="timeThree" destination="dT8-Kb-BWs" id="nsm-PS-lJL"/>
+                        <outlet property="timeTwo" destination="nsW-VK-7ej" id="PQH-Sg-C31"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Syh-hW-Ikl" userLabel="First Responder" sceneMemberID="firstResponder"/>
