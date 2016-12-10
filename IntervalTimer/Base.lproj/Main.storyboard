@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146" y="184"/>
+            <point key="canvasLocation" x="1282" y="-759"/>
         </scene>
         <!--Sequence View Controller-->
         <scene sceneID="E2I-Pz-yrW">
@@ -403,7 +403,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="w7X-yg-xC7"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="backToMain" id="w7X-yg-xC7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OZ-ZE-TJA">
@@ -466,7 +466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Syh-hW-Ikl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="183.95802098950526"/>
+            <point key="canvasLocation" x="-28" y="32"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zae-wq-Wxd">
@@ -518,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccf-dA-k82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-998" y="184"/>
+            <point key="canvasLocation" x="142" y="-760"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

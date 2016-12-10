@@ -48,7 +48,6 @@ class SequenceViewController: UIViewController {
     
     var segments : [Segment] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -217,7 +216,16 @@ class SequenceViewController: UIViewController {
         }
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("inside prepare")
+        if segue.identifier == "backToMain" {
+            print("about to go back to main")
+            print(segments)
+            if let destination = segue.destination as? ViewController {
+                destination.segments = self.segments
+            }
+        }
+    }
     
     
 }

@@ -19,13 +19,14 @@ class ViewController: UIViewController {
     //initial value
     var timeLeft = 60
     var timerOn = true
-    
+    var segments : [Segment] = []
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(segments)
         
         
     }
@@ -88,6 +89,13 @@ class ViewController: UIViewController {
         
         if (timeLeft < 0){
             timerValue.text = "0"
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("inside maain view controller prepare")
+        if segue.identifier == "backToMain" {
+            print("about to go back to main")
         }
     }
     
