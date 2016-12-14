@@ -399,17 +399,12 @@
                                 <rect key="frame" x="36" y="602" width="303" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyc-qC-lpB">
-                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Back"/>
+                                        <state key="normal" title="Done"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="backToMain" id="w7X-yg-xC7"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OZ-ZE-TJA">
-                                        <rect key="frame" x="151.5" y="0.0" width="151.5" height="45"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Done"/>
                                     </button>
                                 </subviews>
                             </stackView>

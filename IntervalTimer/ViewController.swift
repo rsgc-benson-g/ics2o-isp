@@ -12,22 +12,21 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var timerValue: UILabel!
-
+    
     @IBOutlet weak var startButton: UIButton!
     
     var timer = Timer()
     //initial value
-    var timeLeft = 60
-    var timerOn = true
     var segments : [Segment] = []
+    var currentSegment = 0
+    var timeLeft = Int.max
+    var timerOn = true
     
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(segments)
-        
+        timerValue.text = "Pick a Sequence"
         
     }
     
@@ -40,34 +39,67 @@ class ViewController: UIViewController {
     
     @IBAction func startTimer(_ sender: AnyObject) {
         
-       
-        
-        //initilieze timer used to count down
-        timer.invalidate()
-        
-        
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
-        
-        // setting label
-        startButton.setTitle("Pause", for: UIControlState.normal)
-        
-        if timerOn == true {
+        //detect when when it is a pause vs. start
+        if timeLeft < segments[currentSegment].time + 1 {
             
-            timerOn = false
-            
-        }else{
-            timerOn = true
-        }
-        
-        if (timerOn ==  true){
+            // IT'S A PAUSE
+            // * invalidate timer
             timer.invalidate()
+            //set title
             startButton.setTitle("Start", for: UIControlState.normal)
-        }else{
             
-           
+
+
+            //toggle
+            
+            //if its on turn it off
+            if timerOn == true {
+                
+                timerOn = false
+                
+                
+                //otherwise ignore
+            } else {
+                
+                timerOn = true
+                
+            }
+            
+            //if it is off Set the title
+            if timerOn == false {
+                
+                
+                startButton.setTitle("Start", for: UIControlState.normal)
+                
+                
+            //if not leave it
+            } else {
+                
+        
+                //set title
+                startButton.setTitle("Pause", for: UIControlState.normal)
+                //start timer
+                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
+            }
+            
+        } else {
+            
+            // IT'S A START OF THE TIMER
+            
+            // Setting the time remaining
+            timeLeft = segments[currentSegment].time + 1
+        
+            //initiates timer
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
+            
+            // setting label to pause
             startButton.setTitle("Pause", for: UIControlState.normal)
+
+           timerOn = true
             
+          
         }
+        
         
     }
     
@@ -75,8 +107,8 @@ class ViewController: UIViewController {
         
         startButton.setTitle("Start", for: UIControlState.normal)
         timer.invalidate()
-        timeLeft = 61
-        timerValue.text = "60"
+        timeLeft = segments[currentSegment].time
+        timerValue.text = String(segments[currentSegment].time)
         timerOn = false
         
     }
@@ -93,9 +125,8 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("inside maain view controller prepare")
         if segue.identifier == "backToMain" {
-            print("about to go back to main")
+            
         }
     }
     
