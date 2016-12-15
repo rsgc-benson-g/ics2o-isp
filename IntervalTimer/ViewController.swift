@@ -119,8 +119,11 @@ class ViewController: UIViewController {
         timeLeft = timeLeft - 1
         timerValue.text = "\(timeLeft)"
         
-        if (timeLeft < 0){
-            timerValue.text = "0"
+        if (timeLeft < 1){
+            timer.invalidate()
+            currentSegment += 1
+            timeLeft = segments[currentSegment].time
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
         }
     }
     

@@ -138,7 +138,7 @@ class SequenceViewController: UIViewController {
     @IBAction func secondSegmentTime(_ sender: Any) {
         if let time = timeTwo.text {
             if let intTime = Int(time) {
-                segments[0].time = intTime
+                segments[1].time = intTime
             }
         }
     }
