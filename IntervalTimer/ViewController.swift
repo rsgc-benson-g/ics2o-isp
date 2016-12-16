@@ -43,67 +43,67 @@ class ViewController: UIViewController {
         
         if segments.count > 0 {
             
-        
-        if timeLeft < segments[currentSegment].time + 1 {
             
-            // IT'S A PAUSE
-            // * invalidate timer
-            timer.invalidate()
-            //set title
-            startButton.setTitle("Start", for: UIControlState.normal)
-            
-            
-            
-            //toggle
-            
-            //if its on turn it off
-            if timerOn == true {
+            if timeLeft < segments[currentSegment].time + 1 {
                 
-                timerOn = false
-                
-                
-                //otherwise ignore
-            } else {
-                
-                timerOn = true
-                
-            }
-            
-            //if it is off Set the title
-            if timerOn == false {
-                
-                
+                // IT'S A PAUSE
+                // * invalidate timer
+                timer.invalidate()
+                //set title
                 startButton.setTitle("Start", for: UIControlState.normal)
                 
                 
-                //if not leave it
+                
+                //toggle
+                
+                //if its on turn it off
+                if timerOn == true {
+                    
+                    timerOn = false
+                    
+                    
+                    //otherwise ignore
+                } else {
+                    
+                    timerOn = true
+                    
+                }
+                
+                //if it is off Set the title
+                if timerOn == false {
+                    
+                    
+                    startButton.setTitle("Start", for: UIControlState.normal)
+                    
+                    
+                    //if not leave it
+                } else {
+                    
+                    
+                    //set title
+                    startButton.setTitle("Pause", for: UIControlState.normal)
+                    //start timer
+                    timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
+                }
+                
             } else {
                 
+                // IT'S A START OF THE TIMER
                 
-                //set title
-                startButton.setTitle("Pause", for: UIControlState.normal)
-                //start timer
+                // Setting the time remaining
+                timeLeft = segments[currentSegment].time + 1
+                
+                //initiates timer
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
+                
+                // setting label to pause
+                startButton.setTitle("Pause", for: UIControlState.normal)
+                
+                timerOn = true
+                
+                
             }
             
-        } else {
-            
-            // IT'S A START OF THE TIMER
-            
-            // Setting the time remaining
-            timeLeft = segments[currentSegment].time + 1
-            
-            //initiates timer
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
-            
-            // setting label to pause
-            startButton.setTitle("Pause", for: UIControlState.normal)
-            
-            timerOn = true
-            
-            
-        }
-        
         } else {
             timerValue.text = "Error. Name or time invalid."
         }
@@ -129,39 +129,34 @@ class ViewController: UIViewController {
         
         if (timeLeft < 1){
             timer.invalidate()
-            if (currentSegment + 1 <= segments.count){
+            
+            
+            // load the next segment if it exists
+            
+            if currentSegment != segments.count - 1 {
                 
-                // load the next segment if it exists
-                
-                if currentSegment != segments.count - 1 {
-                    
-                    // go to next segment
-                    currentSegment += 1
-                    //set time left
-                    timeLeft = segments[currentSegment].time + 1
-                    //starttimer
-                    timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
-                    
-                    
-                }
-                
+                // go to next segment
+                currentSegment += 1
+                //set time left
+                timeLeft = segments[currentSegment].time + 1
+                //starttimer
+                timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
                 
                 
             } else {
-                
-                self.timerValue.text = "Sequence Completed"
+                timerValue.text = "Sequence Completed"
                 startButton.setTitle("Start", for: UIControlState.normal)
-                
             }
             
+            
         }
-}
-
-override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "backToMain" {
-        
     }
-}
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "backToMain" {
+            
+        }
+    }
+    
 }
 

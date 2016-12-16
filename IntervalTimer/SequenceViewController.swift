@@ -221,7 +221,7 @@ class SequenceViewController: UIViewController {
             for segment in segments {
                 if segment.time != 0 && segment.name != "" {
                     if let destination = segue.destination as? ViewController {
-                        destination.segments.append (segment)
+                        destination.segments.append(segment)
                     }
                 }
             }
