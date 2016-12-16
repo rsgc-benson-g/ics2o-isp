@@ -134,7 +134,7 @@ class SequenceViewController: UIViewController {
             }
         }
     }
-
+    
     @IBAction func secondSegmentTime(_ sender: Any) {
         if let time = timeTwo.text {
             if let intTime = Int(time) {
@@ -218,11 +218,13 @@ class SequenceViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "backToMain" {
-            if let destination = segue.destination as? ViewController {
-                destination.segments = self.segments
+            for segment in segments {
+                if segment.time != 0 && segment.name != "" {
+                    if let destination = segue.destination as? ViewController {
+                        destination.segments.append (segment)
+                    }
+                }
             }
         }
     }
-    
-    
 }
