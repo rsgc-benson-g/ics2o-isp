@@ -216,9 +216,11 @@ class SequenceViewController: UIViewController {
         }
     }
     
+    //send array to View Controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "backToMain" {
             for segment in segments {
+                //make sure it has a name and time value
                 if segment.time != 0 && segment.name != "" {
                     if let destination = segue.destination as? ViewController {
                         destination.segments.append(segment)
