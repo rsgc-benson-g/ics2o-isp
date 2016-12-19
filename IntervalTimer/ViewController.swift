@@ -46,9 +46,15 @@ class ViewController: UIViewController {
         
         if segments.count > 0 {
             
-            currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
-            nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
-
+            
+            //only if the area has more values
+            if currentSegment != segments.count - 1 {
+                
+                nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
+                currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
+                
+            }
+            
             if timeLeft < segments[currentSegment].time + 1 {
                 
                 // IT'S A PAUSE
@@ -117,22 +123,24 @@ class ViewController: UIViewController {
     
     @IBAction func resetTimer(_ sender: AnyObject) {
         
-        //set current segment
-        currentSegment = 0
-        //set start button to start
-        startButton.setTitle("Start", for: UIControlState.normal)
-        //invalidate timer
-        timer.invalidate()
-        //set time left
-        timeLeft = segments[currentSegment].time
-        //update timer display
-        timerValue.text = String(segments[currentSegment].time)
-        //turn toggle off
-        timerOn = false
-        //set current and next labels
-        currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
-        nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
-
+        if segments.count != 0 {
+            //set current segment
+            currentSegment = 0
+            //set start button to start
+            startButton.setTitle("Start", for: UIControlState.normal)
+            //invalidate timer
+            timer.invalidate()
+            //set time left
+            timeLeft = segments[currentSegment].time
+            //update timer display
+            timerValue.text = String(segments[currentSegment].time)
+            //turn toggle off
+            timerOn = false
+            //set current and next labels
+            currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
+            nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
+            
+        }
     }
     
     
@@ -158,15 +166,23 @@ class ViewController: UIViewController {
                 //starttimer
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("decrement"), userInfo: nil, repeats: true)
                 currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
+                nextLabel.text = "Next Segment: Last One"
+                
                 
             } else {
                 //final text changes
                 timerValue.text = "Sequence Completed"
                 startButton.setTitle("Start", for: UIControlState.normal)
                 currentLabel.text = "Current Segment:"
-
+                nextLabel.text = "Next Segment: "
             }
             
+            
+        }
+        
+        if currentSegment + 1 == segments.count {
+            
+            nextLabel.text = ""
             
         }
     }

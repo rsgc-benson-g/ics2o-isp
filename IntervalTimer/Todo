@@ -1,3 +1,13 @@
 Todo:
 
-- Main Sequence Name Gets Added to List Picker
+
+
+- Add Progress Bar (full progress/total time)
+
+- Add Main Name to Picker
+
+- Save Sequence Names (data storage)
+
+- Audio affects for Next interval (and finish)
+
+- Remainder (display in minutes)
