@@ -51,6 +51,10 @@ class SequenceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector (SequenceViewController.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
+        
         for _ in 1...10 {
             
             segments.append(Segment(withName: "", ofTime: 0))
@@ -228,5 +232,9 @@ class SequenceViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func didTapView() {
+        self.view.endEditing(true)
     }
 }
