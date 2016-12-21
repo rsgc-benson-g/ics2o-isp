@@ -11,3 +11,6 @@ Todo:
 - Audio affects for Next interval (and finish)
 
 - Remainder (display in minutes)
+
+
+- Fix a bug where the app will fail if a name, but not a time value is entered, or vice versa.

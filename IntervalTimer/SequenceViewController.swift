@@ -8,6 +8,7 @@
 
 import UIKit
 
+//create a structure that takes name (String) and Time (Int)
 struct Segment {
     
     var name: String
@@ -19,7 +20,8 @@ struct Segment {
     }
 }
 
-class SequenceViewController: UIViewController {
+class SequenceViewController: UIViewController, UITextFieldDelegate {
+    // adding the outlets for all of the fields
     
     @IBOutlet weak var nameOne: UITextField!
     @IBOutlet weak var nameTwo: UITextField!
@@ -51,18 +53,36 @@ class SequenceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //create tap recongnizer to allow users to tap out of keyboard
+        
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.addTarget(self, action: #selector (SequenceViewController.didTapView))
         self.view.addGestureRecognizer(tapRecognizer)
         
+        //loop and append segments
         for _ in 1...10 {
             
             segments.append(Segment(withName: "", ofTime: 0))
+            
+            
+            //delegate text fields
+            self.nameOne.delegate = self;
+            self.nameTwo.delegate = self;
+            self.nameThree.delegate = self;
+            self.nameFour.delegate = self;
+            self.nameFive.delegate = self;
+            self.nameSix.delegate = self;
+            self.nameSeven.delegate = self;
+            self.nameEight.delegate = self;
+            self.nameNine.delegate = self;
+            self.nameTen.delegate = self;
+            
         }
         
         
     }
     
+    // taking the name from the text boxes and adding them to the array
     @IBAction func firstSegmentName(_ sender: Any) {
         if let name = nameOne.text {
             segments[0].name = name
@@ -128,6 +148,10 @@ class SequenceViewController: UIViewController {
             segments[9].name = name
         }
     }
+    
+    
+    
+    // taking the time (as int) from the text boxes and adding them to the array
     
     
     
@@ -234,7 +258,14 @@ class SequenceViewController: UIViewController {
         }
     }
     
+    //dismiss keyboard after tapping elsewhere
     func didTapView() {
         self.view.endEditing(true)
+    }
+    
+    //dismiss keyboard after tapping return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }

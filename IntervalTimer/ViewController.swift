@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timerValue.text = "Pick a Sequence"
+        timerValue.text = "Create your Session!"
         
     }
     
@@ -41,13 +41,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func startTimer(_ sender: AnyObject) {
-        
         //detect when when it is a pause vs. start
         
         if segments.count > 0 {
             
             
-            //only if the area has more values
+            //only if the array has more values to display
             if currentSegment != segments.count - 1 {
                 
                 nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
@@ -110,11 +109,12 @@ class ViewController: UIViewController {
                 // setting label to pause
                 startButton.setTitle("Pause", for: UIControlState.normal)
                 
+                //enable toggle
                 timerOn = true
                 
                 
             }
-            
+            // if the array is empty - tell this to the user
         } else {
             timerValue.text = "Error. Name or time invalid."
         }
@@ -123,13 +123,14 @@ class ViewController: UIViewController {
     
     @IBAction func resetTimer(_ sender: AnyObject) {
         
+        //avoid crashes on reset by only running if there is at least one segment in the array
         if segments.count != 0 {
+            //invalidate timer
+            timer.invalidate()
             //set current segment
             currentSegment = 0
             //set start button to start
             startButton.setTitle("Start", for: UIControlState.normal)
-            //invalidate timer
-            timer.invalidate()
             //set time left
             timeLeft = segments[currentSegment].time
             //update timer display
@@ -147,11 +148,12 @@ class ViewController: UIViewController {
     
     //decreases timer value
     func decrement(){
-        
+        //decrement by one second
         timeLeft = timeLeft - 1
+        //set timer value to be the time left
         timerValue.text = "\(timeLeft)"
         
-        if (timeLeft < 1){
+        if (timeLeft < 1) {
             timer.invalidate()
             
             
@@ -170,8 +172,9 @@ class ViewController: UIViewController {
                 
                 
             } else {
+                
                 //final text changes
-                timerValue.text = "Sequence Completed"
+                timerValue.text = "Session Completed"
                 startButton.setTitle("Start", for: UIControlState.normal)
                 currentLabel.text = "Current Segment:"
                 nextLabel.text = "Next Segment: "
@@ -181,7 +184,7 @@ class ViewController: UIViewController {
         }
         
         if currentSegment + 1 == segments.count {
-            
+            //hide label if you are on the last segment
             nextLabel.text = ""
             
         }
