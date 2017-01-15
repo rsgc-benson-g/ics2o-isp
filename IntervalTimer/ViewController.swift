@@ -50,9 +50,10 @@ class ViewController: UIViewController {
             if currentSegment != segments.count - 1 {
                 
                 nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
-                currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
                 
             }
+            
+            currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
             
             if timeLeft < segments[currentSegment].time + 1 {
                 
@@ -79,14 +80,11 @@ class ViewController: UIViewController {
                     
                 }
                 
-                //if it is off Set the title
+                //if it is off do nothing
                 if timerOn == false {
                     
+                    //if timer is on begin startup procedure
                     
-                    startButton.setTitle("Start", for: UIControlState.normal)
-                    
-                    
-                    //if not leave it
                 } else {
                     
                     
@@ -139,11 +137,12 @@ class ViewController: UIViewController {
             timerOn = false
             //set current and next labels
             currentLabel.text = "Current Segment: " + String(segments[currentSegment].name)
-            nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
             
+            if segments.count > 1 {
+                nextLabel.text = "Next Segment: " + String(segments[currentSegment + 1].name)
+            }
         }
     }
-    
     
     
     //decreases timer value
@@ -201,4 +200,3 @@ class ViewController: UIViewController {
     }
     
 }
-
